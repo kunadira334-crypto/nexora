@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible NEXORA issue
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce. Do not include secrets or personal identifiers.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access mode
+      options:
+        - Standard
+        - ADB
+        - Shizuku
+        - Not applicable
+    validations:
+      required: true

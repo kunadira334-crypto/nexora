@@ -1,0 +1,13 @@
+name: Security concern
+description: Report a security-sensitive issue
+title: "[Security]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not publish secrets, personal data, exploit payloads, or device identifiers. For a sensitive vulnerability, contact maintainers privately."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
